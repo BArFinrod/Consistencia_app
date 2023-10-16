@@ -2,6 +2,7 @@ pandas==1.5.3
 shareplum==0.5.1
 streamlit==1.27.2
 openpyxl==3.1.2
+xlsxwriter==3.1.8
 
 
 
