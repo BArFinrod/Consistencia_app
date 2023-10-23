@@ -128,7 +128,7 @@ if st.button('Diagnosticar...'):
   username = 'uegobdat04@MINEDU.GOB.PE'
   password = 'Rwarela123$'
 
-  @st.cache_data
+  # @st.cache_data
   def _get_file_XLSX_main(pathfolder, file, sheet_name,  url, path, username, password, header=[0]):
       df = pd.read_excel(BytesIO(loadShareFile(pathfolder=pathfolder, filename=file, url=url, path=path, username=username, password=password)), sheet_name=sheet_name, dtype='str', header=header)
       return df
