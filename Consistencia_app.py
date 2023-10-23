@@ -135,7 +135,9 @@ if st.button('Diagnosticar...'):
 
 
   dftables = _get_file_XLSX_main(pathfolder, file, sheet_name=sheet, url=url, path=path, username=username, password=password)
-  dftables0 = dftables.rename({'table_format':'table_file_format',
+  dftables0 = dftables.rename({'source_type':'table_file_type',
+                              'source_format':'table_file_format',
+                              'source_name':'source_cod',
                               'cod_system':'system_cod',
                               'cod_process':'process_cod',
                               'desc_system':'system_desc',
