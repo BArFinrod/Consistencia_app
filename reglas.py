@@ -140,6 +140,8 @@ def _rules(list_subdomains, list_domains, list_uos_acronims, list_cod_process, l
     def _oseert17_2(field):
       dominios_minedu = ['minedu.gob.pe']#, 'edu.gob.pe']
       # Dividir el correo electrónico en nombre de usuario y dominio
+      if pd.isna(field):
+        return False
       partes = field.split('@')
       if len(partes) == 2:
         dominio = partes[1].lower()
